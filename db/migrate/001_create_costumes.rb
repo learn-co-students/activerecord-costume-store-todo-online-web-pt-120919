@@ -8,7 +8,7 @@
 # In this change method, create columns with the correct names and 
 # value types according to the spec
 
-class Costumes < ActiveRecord::Migration[5.2]
+class CreateCostumes < ActiveRecord::Migration[5.2]
     def change
         create_table :costumes do |t|
             t.string :name
@@ -18,5 +18,5 @@ class Costumes < ActiveRecord::Migration[5.2]
             t.timestamp :created_at
             t.timestamp :updated_at
         end
-      end
+    end
 end
